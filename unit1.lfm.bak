@@ -1,8 +1,157 @@
-object Form1: TForm1
-  Left = 238
-  Height = 240
-  Top = 147
+object FormRechteck: TFormRechteck
+  Left = 689
+  Height = 265
+  Top = 129
   Width = 320
-  Caption = 'Form1'
+  Caption = 'Berechnungen am Rechteck'
+  ClientHeight = 265
+  ClientWidth = 320
   LCLVersion = '1.6.0.4'
+  object PanelHeader: TPanel
+    Left = 8
+    Height = 33
+    Top = 8
+    Width = 292
+    Caption = 'Berechnungen am Rechteck'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+  end
+  object LabelSeiteA: TLabel
+    Left = 10
+    Height = 15
+    Top = 60
+    Width = 34
+    Caption = 'Seite a'
+    ParentColor = False
+  end
+  object LabelSeiteB: TLabel
+    Left = 10
+    Height = 15
+    Top = 90
+    Width = 35
+    Caption = 'Seite b'
+    ParentColor = False
+  end
+  object LabelFlaeche: TLabel
+    Left = 10
+    Height = 15
+    Top = 136
+    Width = 34
+    Caption = 'Fläche'
+    ParentColor = False
+  end
+  object LabelUmfang: TLabel
+    Left = 10
+    Height = 15
+    Top = 160
+    Width = 43
+    Caption = 'Umfang'
+    ParentColor = False
+  end
+  object LabelDiagonale: TLabel
+    Left = 10
+    Height = 15
+    Top = 185
+    Width = 53
+    Caption = 'Diagonale'
+    ParentColor = False
+  end
+  object LabelCM1: TLabel
+    Left = 180
+    Height = 15
+    Top = 60
+    Width = 17
+    Caption = 'cm'
+    ParentColor = False
+  end
+  object LabelCM2: TLabel
+    Left = 180
+    Height = 15
+    Top = 90
+    Width = 17
+    Caption = 'cm'
+    ParentColor = False
+  end
+  object LabelCM3: TLabel
+    Left = 180
+    Height = 15
+    Top = 136
+    Width = 21
+    Caption = 'cm²'
+    ParentColor = False
+  end
+  object LabelCM4: TLabel
+    Left = 180
+    Height = 15
+    Top = 160
+    Width = 17
+    Caption = 'cm'
+    ParentColor = False
+  end
+  object LabelCM5: TLabel
+    Left = 180
+    Height = 15
+    Top = 185
+    Width = 17
+    Caption = 'cm'
+    ParentColor = False
+  end
+  object EditSeiteA: TEdit
+    Left = 80
+    Height = 23
+    Top = 60
+    Width = 93
+    TabOrder = 1
+  end
+  object EditSeiteB: TEdit
+    Left = 80
+    Height = 23
+    Top = 90
+    Width = 93
+    TabOrder = 2
+  end
+  object EditFlaeche: TEdit
+    Left = 80
+    Height = 23
+    Top = 135
+    Width = 93
+    TabOrder = 3
+  end
+  object EditUmfang: TEdit
+    Left = 80
+    Height = 23
+    Top = 160
+    Width = 93
+    TabOrder = 4
+  end
+  object EditDiagonale: TEdit
+    Left = 80
+    Height = 23
+    Top = 185
+    Width = 93
+    TabOrder = 5
+  end
+  object ButtonBerechnen: TButton
+    Left = 80
+    Height = 21
+    Top = 231
+    Width = 93
+    Caption = 'Berechnen'
+    OnClick = ButtonBerechnenClick
+    TabOrder = 6
+  end
+  object ButtonClose: TButton
+    Left = 207
+    Height = 21
+    Top = 231
+    Width = 93
+    Caption = 'Abbruch'
+    OnClick = ButtonCloseClick
+    TabOrder = 7
+  end
 end
