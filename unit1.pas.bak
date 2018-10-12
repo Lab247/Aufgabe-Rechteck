@@ -50,7 +50,7 @@ implementation
 
 procedure TFormRechteck.ButtonBerechnenClick(Sender: TObject);
 var SeiteA, SeiteB, Flaeche, Umfang: Integer;
-  Diagonale : Real;
+    Diagonale : Real;
 begin
      SeiteA := StrToInt(EditSeiteA.Text);      //einlesen Seite A
      SeiteB := StrToInt(EditSeiteB.Text);      //einlesen Seite B
@@ -59,7 +59,7 @@ begin
      Umfang := 2*(SeiteA + SeiteB);            //Umfang berechnen
      EditUmfang.text := IntToStr(Umfang);      //anzeigen
      Diagonale := sqrt(SeiteA*SeiteA + SeiteB*SeiteB); //Diagonale berechnen
-     EditDiagonale.text := IntToStr(Diagonale);//anzeigen
+     EditDiagonale.text := FloatToStr(Diagonale);//anzeigen
 end;
 
 procedure TFormRechteck.ButtonCloseClick(Sender: TObject);
